@@ -9,7 +9,7 @@ def get_auth_cookie():
     return cookie
 
 
-def add_auth_cookie():
+def add_auth_cookie_to_browser():
     browser.open('/')
     browser.driver.add_cookie({'name': "NOPCOMMERCE.AUTH", 'value': get_auth_cookie()})
     browser.open('/')
